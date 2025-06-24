@@ -1,0 +1,169 @@
+html, body, #root {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 22, 7);
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(0, 22, 7);
+    color: rgb(176, 255, 176); 
+    padding-bottom: 40px;
+}
+
+a {
+    color: #00ffbf;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 255, 13);
+    text-decoration: underline;
+}
+a:visited {
+    color: #45ffff;
+}
+@keyframes spinIn {
+    from {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    max-width: 100%;
+    background-color: rgb(0, 22, 7);
+    color: rgb(176, 255, 176); 
+    width: 100%;
+    
+    
+}
+.main {
+    text-align: center; 
+    animation: spinIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeInMoveDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.start {
+    text-align: center;
+    padding: 0;
+    opacity: 0;
+    animation: fadeInMoveDown 0.8s ease-out forwards;
+}
+
+
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.zoom {
+    animation: zoomIn 0.8s ease-in-out forwards;
+}
+
+.yap {
+    /*not make it centered but don't let iit hit the edges*/
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.card {
+    background-color: hsl(127, 100%, 87%);
+    color: rgb(0, 37, 0);
+    border: 1px solid rgb(0, 255, 13);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: rgba(0, 32, 2, 0.2) 0px 10px 20px -5px;
+    width: 320px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    * {
+        color: inherit !important;
+    }
+}
+@keyframes anti-hover {
+    from {
+        transform: scale(1.2)
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes hover {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.2);
+    }
+
+}
+.card:hover {
+    animation: hover 0.3s ease-in-out forwards;
+}
+.card:not(:hover) {
+    /* if there's anyone reading this code (very unlikely) you absolutely, ABSOLUTELY need to know the :not() selector!!!
+    In my case, I had an issue with the zooming animations. I first used @keyframes to make a hover animation when card:hover. However,
+    if you moved the mouse away from the card, it would zoom out instantly, which was not what I wanted. I wanted it to zoom out smoothly.
+    So I used the :not() selector to apply a different animation when the card is not hovered. This way, it zooms out smoothly.
+    First, I went straight for the transition rule. It usually works. however, in the class, I had a conflicting animation: zoom, 
+    making it do absolutely nothing. I was stuck. I had to choose what animation to keep because I couldn't keep both of them.
+    I really liked the zoom upon load though. I couldn't just give it away for a hover animation. Why not just have both?
+    So I found out about the :not() selector. And it was a lifesaver! Definitely something you can't forget.
+    */
+    animation: anti-hover 0.3s ease-in-out forwards;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
