@@ -10,10 +10,10 @@ export default function App() {
                 <p>Who am I?</p>
             </div>
             <p className="zoom yap">
-                Hi! I am <a href="https://github.com/supervoidcoder/">supervoidcoder</a>, known as <a href="https://youtube.com/@greencuby">Green Cube</a> and <a href="https://scratch.mit.edu/users/scratchcode1_2_3">scratchcode1_2_3</a> on other platforms. I love programming, making games (and playing them too, heh), making animations, writing stories, and other fun tech stuff! I like to do both software and hardware-related things, though I have much more experience with software. I know my fair share of programming languages—from Scratch, Python, JavaScript, to quite a bit of C++! I’ve also dabbled in C# and Kotlin.
+                Hi! I am <a href="https://github.com/supervoidcoder/">supervoidcoder</a>, known as <a href="https://youtube.com/@greencuby">Green Cube</a> and <a href="https://scratch.mit.edu/users/scratchcode1_2_3">scratchcode1_2_3</a> on other platforms. I love programming, making games (and playing them too, heh), making animations, writing stories, and other fun tech stuff! I like to do both software and hardware-related things, though I have much more experience with software. I know my fair share of programming languages too, from Scratch, Python, JavaScript, to quite a bit of C++! I’ve also played around a bit in C# and Kotlin, but not that much.
             </p>
             <p className="zoom yap">
-                On the hardware side of things, I’ve used Raspberry Pi quite a bit. I own 3 Raspberry Pi’s: one 4B and two Zero 2W models. I’ve used them for projects like a plane, a mini server, and a retro console with Batocera. I’ve also experimented with micro:bit (meh) and even fixed my laptop once!
+                On the hardware side of things, I’ve used Raspberry Pi's quite a bit. I own 3 Raspberry Pi’s: one Raspberry Pi 4B and two Raspberry Pi Zero 2W's. I’ve used them for stuff like a plane, a mini server, playing games with Batocera. I've also tried out micro:bit once (it was uh...) and even fixed my laptop once!
             </p>
             <p className="zoom yap">
                 This site is more like my central hub. My first and main website is <a href="https://greencuby.com">https://greencuby.com</a>, where I post most of my tools, games, and helpful stuff. Check out all my websites and socials below!
