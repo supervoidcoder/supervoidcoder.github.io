@@ -9,8 +9,9 @@ export default function App() {
             <div className="main">
                 <p>Who am I?</p>
             </div>
+            <!-- don't ask why i made a static website with React -->
             <p className="zoom yap">
-                Hi! I am <a href="https://github.com/supervoidcoder/">supervoidcoder</a>, known as <a href="https://youtube.com/@greencuby">Green Cube</a> and <a href="https://scratch.mit.edu/users/scratchcode1_2_3">scratchcode1_2_3</a> on other platforms. I love programming, making games (and playing them too, heh), making animations, writing stories, and other fun tech stuff! I like to do both software and hardware-related things, though I have much more experience with software. I know my fair share of programming languages too, from Scratch, Python, JavaScript, to quite a bit of C++! I’ve also played around a bit in C# and Kotlin, but not that much.
+                Hi! I am <a href="https://github.com/supervoidcoder/">supervoidcoder</a>, known as <a href="https://youtube.com/@greencuby">Green Cube</a> and <a href="https://scratch.mit.edu/users/scratchcode1_2_3">scratchcode1_2_3</a> on other platforms. I love programming, making games (and playing them too, heh), making animations, writing stories, and other fun tech stuff! I like to do both software and hardware-related things, though I have much more experience with software. I know my fair share of programming languages too, from Scratch, Python, JavaScript (+ React framework), to quite a bit of C++! I’ve also played around a bit in C# and Kotlin, but not that much.
             </p>
             <p className="zoom yap">
                 On the hardware side of things, I’ve used Raspberry Pi's quite a bit. I own 3 Raspberry Pi’s: one Raspberry Pi 4B and two Raspberry Pi Zero 2W's. I’ve used them for stuff like a plane, a mini server, playing games with Batocera. I've also tried out micro:bit once (it was uh...) and even fixed my laptop once!
